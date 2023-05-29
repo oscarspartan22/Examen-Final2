@@ -5,6 +5,7 @@
 package examen;
 
 import views.Atributos;
+import static views.Atributos.atributos;
 
 /**
  *
@@ -19,6 +20,15 @@ public class produccion extends javax.swing.JFrame {
     String matricula;
     String nombre;
     String correo;
+    
+    public void setModelo(){
+        String[] tablacabecera = {"ID","Masa Atomica°", "Numero Atomico", "Simbolo Atomico","Nombre","Color"};      
+}
+    
+    public void setDatos(){
+        Object[] datos = new Object[atributos.getColumnCount()];
+
+    }    
     
         public void author62291(){
         matricula = "62291";
