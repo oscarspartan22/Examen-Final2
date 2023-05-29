@@ -10,11 +10,25 @@ package examen;
  */
 public class principal {
 
+    String matricula;
+    String nombre;
+    String correo;
+    
+    public void author62291(){
+        matricula = "62291";
+        nombre = "Oscar Omar Quijano Cruz"; 
+        correo = "al062291@uacam.mx";        
+        System.out.println("Matricula: " + matricula);
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Correo electronico: " + correo );
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        principal princ = new principal();
+        princ.author62291();
     }
     
 }
