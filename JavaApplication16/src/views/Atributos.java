@@ -19,6 +19,15 @@ public class Atributos {
     private String uso;
     public static ArrayList<Atributos> atributos = new ArrayList<>();
     
+        public Atributos(String actividad, String  codigo, int id, String nombre, String responsable, String uso){
+        this.actividad = actividad;
+        this.codigo = codigo;
+        this.id = id;
+        this.nombre = nombre;
+        this.responsable =  responsable;
+        this.uso =  uso; 
+    }
+    
     public String getActividad() {
         return actividad;
     }
@@ -85,7 +94,7 @@ public class Atributos {
         atributos.remove(posicion);
     }
         
-    public static void ActualizarElemento(int recNo, String actividad, String  codigo, int id, String nombre, String responsable, String uso){
+    public static void ActualizarProduccion(int recNo, String actividad, String  codigo, int id, String nombre, String responsable, String uso){
         atributos.get(recNo).setActividad(actividad);
         atributos.get(recNo).setCodigo(codigo);
         atributos.get(recNo).setId(id);
